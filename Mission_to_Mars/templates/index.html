@@ -34,25 +34,51 @@
                 <img class= "image" src="{{ mars.featured_image_url }}"alt="Featured Mars Image">
               </div>
               <div class="col-sm-4">
-              <p>table here </p>
+              <h3>Mars Facts</h3>
+              <p>{{ mars.mars_facts }}</p>
               </div>
             </div>
           </div>
 
 
           <div class="container">
-            <div class="row">
+            <div class="row text-center">
               <div class="col-md-12 ms-auto col-sm-12">
              <h3>Mars Hemispheres </h3>
-
+             </div>
+             <div class="col-md-3">
              <div class="card" style="width: 18rem;">
-              <img src="" class="card-img-top" alt="">
+              <img src="{{ mars.hemisphere_images.0.img_url }}" class="card-img-top" alt="{{ mars.hemisphere_images.0.title }}">
               <div class="card-body">
-                <h5 class="card-title">image 1</h5>
-
+                <h5 class="card-title">{{ mars.hemisphere_images.0.title }}</h5>
               </div>
             </div>
-            
+          </div>
+            <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+              <img src="{{ mars.hemisphere_images.1.img_url }}" class="card-img-top" alt="{{ mars.hemisphere_images.1.title }}">
+              <div class="card-body">
+                <h5 class="card-title">{{ mars.hemisphere_images.1.title }}</h5>
+              </div>
+            </div>
+          </div>
+            <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+              <img src="{{ mars.hemisphere_images.2.img_url }}" class="card-img-top" alt="{{ mars.hemisphere_images.2.title }}">
+              <div class="card-body">
+                <h5 class="card-title">{{ mars.hemisphere_images.2.title }}</h5>
+              </div>
+            </div>
+          </div>
+            <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+              <img src="{{ mars.hemisphere_images.3.img_url }}" class="card-img-top" alt="{{ mars.hemisphere_images.3.title }}">
+              <div class="card-body">
+                <h5 class="card-title">{{ mars.hemisphere_images.3.title }}</h5>
+              </div>
+              </div>
+            </div>
+
             </div>
           </div>
 
