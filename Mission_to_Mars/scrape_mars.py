@@ -65,6 +65,14 @@ def scrape():
         image = soup.find('div', class_='downloads').find('ul').find('li').find('a')['href']
         final_image = usgs_url + image
         hemisphere.append({'title':itemtitle, 'img_url':final_image})
-
+        
     browser.quit()
+    
+    mars_data = {
+        'news_title': news_title,
+        'news_p': news_p,
+        'featured_image_url': featured_image_url,
+        'mars_facts': html_table,
+        'hemisphere_images': hemisphere
+    }
     return mars_data
